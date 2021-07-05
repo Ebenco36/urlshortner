@@ -14,11 +14,18 @@ This is a node js app built by Awotoro Ebenezer Oladimeji to help reduce long ur
 > npm install or npm i
 - Start your application using npm run start.
 > npm run start
-- Application runs on port 5000 visit http://localhost:5000/
+- Application runs on port 5000 visit http://localhost:5000/api/url_shortner
+
 ## Endpoints available
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Visit http://localhost:5000/api/url_shortner to get the list of url.
+- Make a post request http://localhost:5000/api/url_shortner to create or generate a short code urls.
+> data required for the post endpoint 
+```json
+{
+    longUrl: "http://www.facebook.com?ssjjsslkdlksdsdsdsdsd.ddsdsdsdsdsdnkkdns$cdjdjddj"
+}
+```
+- View page using endpoint http://localhost:5000/api/<code> which redirects user to real page.
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
