@@ -1,0 +1,12 @@
+{
+    "env":{
+        "MONGO_ATLAS_DB_NAME":"intern_app",
+        "MONGO_ATLAS_USERNAME":"intern_app",
+        "MONGO_ATLAS_PW":"SUctMuuftv7DrNI4",
+        "JWT_PW":"SUctMuuftv7DrNI4",
+        "SENDGRID_API_KEY":"VfkgqyeqQtq-SvzwxO7dtg",
+        "GMAIL_USER":"info.internapp@gmail.com",
+        "GMAIL_PW":"info.internapp##",
+        "SECRET":"iusbqwcbcjbcbskcbqkbcjlqjqbcjcbl"
+    }
+}

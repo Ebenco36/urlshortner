@@ -1,0 +1,79 @@
+{
+  "name": "url_shortner",
+  "version": "1.0.0",
+  "description": "Url shortner created by Ebenezer Awotoro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ebenco36/urlshortner.git"
+  },
+  "keywords": [
+    "URLShortner",
+    "shortner",
+    "url",
+    "Opportunities",
+    "support"
+  ],
+  "author": "Ebenezer Awotoro (EbencoAbacus)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ebenco36/urlshortner.git/issues"
+  },
+  "homepage": "https://github.com/Ebenco36/urlshortner.git#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.1",
+    "accesscontrol": "^2.2.1",
+    "acl": "^0.4.11",
+    "async": "^3.2.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "busboy": "^0.3.1",
+    "connect-memcached": "^1.0.0",
+    "connect-mongo": "^3.2.0",
+    "connect-timeout": "^1.9.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "elasticsearch": "^16.7.1",
+    "express": "^4.8.7",
+    "express-acl": "^2.0.8",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash-message": "^2.1.0",
+    "express-group-routes": "^1.1.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
+    "faker": "^5.1.0",
+    "gmail-send": "^1.8.10",
+    "googleapis": "^60.0.1",
+    "jsonwebtoken": "^7.4.3",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.13",
+    "mongoose": "^5.1.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "node-uuid": "^1.4.8",
+    "nodemailer": "^6.4.11",
+    "req-flash": "0.0.3",
+    "sequelize": "^6.3.5",
+    "shortid": "^2.2.16",
+    "swagger-ui-express": "^2.0.13",
+    "sync-request": "^4.0.2",
+    "uuid": "^8.2.0",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}
