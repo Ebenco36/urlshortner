@@ -26,7 +26,7 @@ exports.url_shortner = async(req, res, next) => {
                     "id" : url._id,
                     "long_url" : cipher.decrypt(url.UrlEncrpyt),
                     "short_code" : url.shortCode,
-                    "shortUrl" : baseUrl + '/' + url.shortCode,
+                    "shortUrl" : baseUrl + '/api/' + url.shortCode,
                     "created_at" : url.date
                 }
                 return res.status(201).json({message:"created already", data: data})
@@ -35,13 +35,13 @@ exports.url_shortner = async(req, res, next) => {
                 const shortUrl = baseUrl + '/' + shortCode
 
                 // invoking the Url model and saving to the DB
-                url = new URL({longUrl,UrlEncrpyt,date: new Date()})  
+                url = new URL({UrlEncrpyt,date: new Date()})  
                 await url.save()
                 let data = {
                     "id" : url._id,
                     "long_url" : cipher.decrypt(url.UrlEncrpyt),
                     "short_code" : url.shortCode,
-                    "shortUrl" : baseUrl + '/' + url.shortCode,
+                    "shortUrl" : baseUrl + '/api/' + url.shortCode,
                     "created_at" : url.date
                 }
                 return res.status(201).json({message:"created successfully", data: data})

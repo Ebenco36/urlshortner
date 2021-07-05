@@ -45,7 +45,7 @@ path = require('path');
 
 const DefaultRoute = require('./api/routes/defaultRoute');
 app.set('view engine', 'ejs')
-app.use('/', DefaultRoute);
+app.use('/api', DefaultRoute);
 
 
 const morgan = require('morgan');
