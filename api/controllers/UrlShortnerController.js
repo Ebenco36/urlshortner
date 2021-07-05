@@ -60,11 +60,20 @@ exports.url_shortner = async(req, res, next) => {
 
 
 exports.get_urls = async(req, res, next) => {
+    const baseUrl = req.get('host')
     URL.find({}, function(err, result){
         if(result.length > 0){
             const response = {
                 count:result.length,
-                data: result
+                data: result.map(url =>{
+                    return {
+                        "id" : url._id,
+                        "shortCode" : url.shortCode,
+                        "shortUrl" : baseUrl + '/api/' + url.shortCode,
+                        "longUrl" : cipher.decrypt(url.UrlEncrpyt),
+                        "created_at" : url.date,
+                    }
+                })
             };
             return res.status(201).json({message:"Data fetch successfully", data: response})
         }
